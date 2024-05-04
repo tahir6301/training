@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+        <!--internal css example-->
+    <style>
+        /*Type selector*/
+        h2{
+            color:blue;
+            font-family:'Times New Romans',Times,serif;
+            text-align:center;
+
+        }
+
+        /*id selector*/
+        #iqrainstitute{
+            color:blueviolet;
+            font-family:'Times New Romans',Times,serif;
+            text-align:center;
+
+        }
+
+        /*class slector*/
+        .iqra-institute{
+            text-align:center;
+        }
+
+    #iqraInstitue,
+    .iqra-institute{
+        font-style: italic;
+        font-size: small;
+    }
+    
+    /*decended selector*/
+    div#first-div>h2{
+        color:green
+    }
+    div#third-div{
+            text-align:center;
+        }
+    /*attribute selector*/
+    input[name="btn"]{
+        color:yellow;
+        background-color:black;
+    }
+        </style>
+    </head>
+    <body>
+        <!--inline css example-->
+        <!--<h2 style="color: blue; font-family:'Times New Roman', Times, serif; text-align:center;">Iqra Institue and Technologies<h2>
+         <p style="color:blueviolet; font-family:'Times New Roman', Times, serif; text-align:center;">we teach u webdevelopment,magento developement and ETL testing</p>
+
+         <!-internal css example-->
+
+         <div id="first-div">
+        <h2>Iqra Institue and Technologies</h2>
+        <p id="iqrainstitute">we teach you webdevelopment and ETL testing</p>
+        <p class="iqra-institute"> It is Located in Annamacharya statue, near panwadi</p>
+        <p class="iqra-institute"> located in kadapa Andhrapradesh</p>
+         </div>
+         
+         <!attribute selector--->
+         <div id="third-div">
+            <lable>firstname</lable>
+            <input name="fname" type="text">
+            <br>
+            <lable>password</lable>
+            <input name="pwd" type="password">
+            <br>
+            <input name="btn" type="submit">
+         </div>
+    </body>
+</html>
