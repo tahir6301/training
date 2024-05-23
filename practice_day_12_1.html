@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function showproduct(){
+                var productName = document.getElementById('productName');
+                var productImage = document.getElementById('pic');
+                var inputRange = document.getElementById('txtRange');
+
+                var productNames = ["samsung mobile" , "iphone" , "bike" , "t-shirt"];
+                var productImages =["samsung.png","iphone.jpg","bike.jpg","t-shirt.jpg"];
+
+                var productALTImages =["samsung.png","iphone.jpg","bike.jpg","t-shirt.jpg"];
+
+                console.log(inputRange.value);
+                productName.innerHTML = productNames[inputRange.value];
+                productImage.src = productImages[inputRange.value];
+                productImage.alt = poductALTImages[inputRange.value];
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="productName"></td>
+            </tr>
+            <tr>
+                <img id="pic" src="bike.jpg" height="500" width="300"/>
+            </tr>
+            <tr>
+                <td>
+                    <input type="range" id="txtRange" min="0" max="3" onchange="showproduct()">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
